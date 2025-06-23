@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Akeem Olaiwola Salau - Full Stack Developer (CV)</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f8f9fa;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        .sticky-header {
+            position: sticky;
+            top: 0;
+            z-index: 999;
+        }
+
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 1rem 2rem;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #0056b3;
+            color: white;
+            padding: 0.5rem 2rem;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        li a,
+        p a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+
+        main {
+            padding: 2rem;
+            max-width: 980px;
+            margin: auto;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        }
+
+        h1,
+        h2 {
+            color: #007BFF;
+        }
+
+        .toggle-section {
+            margin-top: 1.5rem;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 0.6rem 1rem;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #toggleContent {
+            margin-top: 1rem;
+            padding: 1rem;
+            background-color: #e9ecef;
+            border-radius: 5px;
+            display: block;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #eee;
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 2rem;
+        }
+
+        .mb-50 {
+            margin-bottom: 50px;
+        }
+
+        .mb-20 {
+            margin-bottom: 20px !important;
+        }
+
+        .mb-10 {
+            margin-bottom: 10px !important;
+        }
+
+        .mb-5 {
+            margin-bottom: 5px !important;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        @media screen and (max-width: 480px) {
+            .image-container {
+                display: block;
+                /* justify-content:space-around;
+            align-items: center; */
+            }
+        }
+
+        .bdr-10 {
+            border-radius: 10px;
+        }
+
+        .slide-in {
+            animation: 3s alternate slide-in;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sticky-header">
+        <header>
+            <h1 style="color: #ffffff;">Akeem Olaiwola Salau: <u>Full Stack Developer (CV)</u></h1>
+        </header>
+
+        <nav>
+            <a href="#intro">About</a>
+            <a href="#contact">Contact</a>
+            <a href="#skill">Skill</a>
+            <a href="#experience">Experience</a>
+            <a href="#academic">Academic</a>
+            <a href="#duties">Duties</a>
+        </nav>
+    </div>
+    <main>
+        <section id="intro" class="mb-50">
+            <h2>About Me</h2>
+            <p>
+                Inspired, courteous and enthusiastic Full Stack Developer with 8+ years of extensive knowledge in Full
+                Stack Development. Highly experienced and self-driven Cloud Architect recognized for successful
+                development and implementation of new cloud management products and services. Proficient in use of
+                multiple professional software programmes, for examples, VPS, Heroku, Github and Bitbucket. Possess
+                extraordinary technical expertise, extensive problem-solving skills, and significant ability to work on
+                different projects simultaneously.
+            </p>
+            <div class="toggle-section">
+                <button onclick="toggleContent()">Toggle to Show/Hide images</button>
+                <div id="toggleContent">
+                    <p>
+                        This section was shown/hidden using JavaScript. You can extend this to make FAQs, modals, or
+                        more
+                        interactive UI elements.
+                    </p>
+                    <div class="image-container slide-in">
+                        <div class="image">
+                            <img src="images/me2.JPG" alt="Me1" class="bdr-10" style="height: 100%; width: 400px;" />
+                        </div>
+                        <div class="image">
+                            <img src="images/friend.JPG" alt="Me1" class="bdr-10" style="height: 100%; width: 400px;" />
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <div class="image">
+                            <img src="images/friends2.avif" alt="Me1" class="bdr-10"
+                                style="height: 100%; width: 300px;" />
+                        </div>
+                        <div class="image">
+                            <img src="images/friends1.jpg" alt="Me1" class="bdr-10"
+                                style="height: 100%; width: 300px;" />
+                        </div>
+                        <div class="image">
+                            <img src="images/friend0.png" alt="Me1" class="bdr-10"
+                                style="height: 100%; width: 300px;" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="mb-50 slide-in">
+            <h2>Contact</h2>
+            <p>
+                Phone: <a href="tel:+2347039839326">+2347039839326</a>
+            </p>
+            <p>
+                Email: <a href="mailto:hello@example.com">olaiwolaakeem@gmail.com</a>
+            </p>
+            <p>
+                Country: Nigeria
+            </p>
+        </section>
+
+        <section id="skill" class="mb-50">
+            <h2>Key Skills</h2>
+            <p>
+            <ul>
+                <li><b>Frontend</b> – HTML, CSS, HTML3, CSS3, Bootstrap, JavaScript, JQuery, and ReactJs.</li>
+                <li><b>Backend</b> – PHP and Python.</li>
+                <li><b>Frameworks</b> – Laravel(PHP) and Django(Python).</li>
+                <li><b>ERP</b> – Odoo development.</li>
+                <li><b>Mobile</b> – React Native.</li>
+                <li><b>Others</b> – High knowledge in API integration, GIT knowledge, Server control knowledge and
+                    AWS knowledge.</li>
+            </ul>
+            </p>
+        </section>
+
+        <section id="academic" class="mb-50">
+            <h2>Experience and Achievements</h2>
+            <p>
+            <ol>
+                <li class="mb-10">
+                    <div class="mb-5"><b>Senior Software Engineer(April 2024 – January 2025) – Team Lead</b></div>
+                    <div class="mb-5"><b><u>Company:</u> Brainwave Technology and IT Solutions</b> · Full-time · Lagos
+                        State, Nigeria<br></div>
+                    <div class="mb-5"><b><u>Skills:</u></b> Back-End Web Development · Object-Oriented Programming (OOP)
+                        · Software Development ·
+                        Web Services API · PHP Frameworks(Laravel) · HTML · Front-End Development · Linux · Bootstrap ·
+                        HTML5 · Git</div>
+                </li>
+                <li class="mb-10">
+                    <div class="mb-5">
+                        <b>Full Stack Developer(June 2019 - Mar 2024) – Team Lead</b>
+                    </div>
+                    <div class="mb-5">
+                        <b><u>Company:</u> Excite Panacea Limited</b> · Full-time · Lagos State, Nigeria
+                    </div>
+                    <div class="mb-5"><b><u>Skills:</u></b> Back-End Web Development · Object-Oriented Programming (OOP)
+                        · Software Development ·
+                        Web Services API · PHP Frameworks(Laravel) · HTML · Front-End Development · Linux · Bootstrap ·
+                        HTML5 · Git
+                    </div>
+                </li>
+                <li class="mb-10">
+                    <div class="mb-5">
+                        <b>Full Stack Developer (Oct 2017 - May 2019)</b>
+                    </div>
+                    <div class="mb-5">
+                        <b><u>Company:</u> Spareworks</b> · Full-time · Ikeja, Lagos State, Nigeria
+                    </div>
+                    <div class="mb-5"><b><u>Skills:</u></b> Back-End Web Development · Object-Oriented Programming (OOP)
+                        · Software Development ·
+                        Web Services API · PHP Frameworks(Laravel) · HTML · Front-End Development · Linux · Bootstrap ·
+                        HTML5 · Git
+                    </div>
+                </li>
+            </ol>
+            </p>
+            <div>
+                <p>
+                    Worked within a team of highly motivated software engineers to deliver complex solutions to specific
+                    technical problems. Deeply involved in the designing, implementing and maintaining of software to
+                    support various client’s products and services. Below are the few links of past works:
+                </p>
+                <ol>
+                    <li class="mb-5">
+                        <a href="https://topquickbuy.com" target="_blank">https://topquickbuy.com</a> - VTU, Cable TV &
+                        Electricity Online Purchase Platform
+                    </li>
+                    <li class="mb-5">
+                        <a href="https://mockap.com" target="_blank">https://mockap.com</a> - (Platform for Quiz used by
+                        Educational Institute, Companies, etc
+                    </li>
+                    <li class="mb-5">
+                        <a href="https://packagist.org/packages/obrainwave/paygate"
+                            target="_blank">https://packagist.org/packages/obrainwave/paygate</a> - This package will
+                        help you as a developer to
+                        use just one code for multiple payment gateway
+                    </li>
+                    <li class="mb-5">
+                        <a href="https://packagist.org/packages/obrainwave/access-tree"
+                            target="_blank">"https://packagist.org/packages/obrainwave/access-tree</a> - This package
+                        allows you to manage user
+                        permissions and roles in a database for Laravel project
+                    </li>
+                    <li class="mb-5">
+                        <a href="https://sparezon.com" target="_blank">https://sparezon.com</a> - eCommerce, eTender,
+                        Auction Platform for heavy vehicle spareparts
+                    </li>
+                    <li class="mb-5">
+                        <a href="https://fhfl.com.ng" target="_blank">https://fhfl.com.ng/</a> - A government housing
+                        programs
+                    </li>
+                    <li class="mb-5">
+                        <a href="https://234parts.com" target="_blank">https://234parts.com</a> - Vehicle spare parts
+                        eCommerce
+                    </li>
+                    <li class="mb-5">
+                        And many backend projects.
+                    </li>
+                </ol>
+
+            </div>
+        </section>
+
+        <section id="experience" class="mb-50">
+            <h2>Academic Qualifications</h2>
+            <p>
+            <ul>
+                <li class="mb-5">Bachelors of Science Degree in Mathematical Science in the faculty of science,
+                    University of Ibadan,
+                    Ibadan, Oyo State, Nigeria.</li>
+                <li class="mb-5">SSCE, Ored College, Agege, Lagos State.</li>
+
+            </ul>
+            </p>
+        </section>
+
+        <section id="duties" class="mb-50">
+            <h2>Duties</h2>
+            <p>
+            <ul>
+                <li class="mb-5">Developing software in a variety of languages such as HTML, CSS, JAVASCRIPT, PHP, and
+                    PYTHON.</li>
+                <li class="mb-5">Diagnosing and resolving system faults.</li>
+                <li class="mb-5">Generating comprehensive test plans.</li>
+                <li class="mb-5">Designing and implementing quality, web-based software products.</li>
+                <li class="mb-5">Participating in all phases of the software development cycle.</li>
+                <li class="mb-5">Analysing user requirements.</li>
+                <li class="mb-5">Supporting existing software products and making progress on new products.</li>
+                <li class="mb-5">Analysing user needs and then developing appropriate software solutions.</li>
+                <li class="mb-5">Performing root cause analysis on software problems.</li>
+                <li class="mb-5">Writing up detailed specifications and program codes.</li>
+                <li class="mb-5">Working with off-shore or off-site team members.</li>
+                <li class="mb-5">Writing code for operating systems.</li>
+
+                <li class="mb-5">Testing products to ensure that they operate satisfactorily.</li>
+                <li class="mb-5">Writing up operational documentation in partnership with technical authors.</li>
+                <li class="mb-5">Testing products in controlled, real life situations.</li>
+                <li class="mb-5">Mentoring and leading junior level software engineers.</li>
+
+            </ul>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        &copy; <span id="year"></span> Akeem Olaiwola Salau's CV. All rights reserved.
+    </footer>
+
+    <script>
+        // Toggle visibility of the extra info section
+        function toggleContent() {
+            const content = document.getElementById('toggleContent');
+            content.style.display = content.style.display === 'block' || !content.style.display
+                ? 'none'
+                : 'block';
+        }
+
+        // Set dynamic year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
